@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import React, {Context} from 'react'
+import data from './data.json'
+// import StartNode from './components/StartNode'
+// import ApproverNode from './components/ApproverNode'
+// import NotifierNode from './components/NotifierNode'
+// import BranchNode from './components/BranchNode'
+import EndNode from './components/EndNode'
+// import ConditionNode from './components/ConditionNode'
+
+import WorkFlow from './components/WorkFlow'
+
+
+
+const config = data.data.nodeConfig
+console.log(config)
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WorkFlow config={config} />
     </div>
   );
 }
