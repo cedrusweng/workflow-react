@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import NodeWrap from './NodeWrap'
 import TitleElement from './TitleElement'
-import WFC from './OperatorContext'
+import WFC from '../OperatorContext'
 function ApproverNode(props) {
     const {onDeleteNode, onSelectNode} = useContext(WFC)
     function delNode() {

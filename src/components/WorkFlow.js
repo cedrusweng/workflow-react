@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import EndNode from './EndNode'
-import Render from './Render'
+import EndNode from './Nodes/EndNode'
+import Render from './Nodes/Render'
 import ZoomLayout from './ZoomLayout'
-import {OptionTypes, NodeTemplates, NodeTypes} from './AddNodeConstant'
+import {OptionTypes, NodeTemplates, NodeTypes} from './Nodes/AddNodeConstant'
 import WFC from './OperatorContext'
 
 function WorkFlow({config:_config}) {
@@ -35,14 +35,18 @@ function WorkFlow({config:_config}) {
     }
     // 删除节点
     function onDeleteNode(pRef, objRef, type, index) {
-        if(type === NodeTypes.BRANCH) {
-            objRef.conditionNodes.splice(index, 1)
-        } else {
-            const newObj = objRef.childNode
-            pRef.childNode = newObj
+        if(window.confirm('是否删除节点？')){
+            if(type === NodeTypes.BRANCH) {
+                console.log([...objRef.conditionNodes],index)
+                objRef.conditionNodes.splice(index, 1)
+                console.log(objRef.conditionNodes)
+            } else {
+                const newObj = objRef.childNode
+                pRef.childNode = newObj
+            }
+            updateNode()
         }
         
-        updateNode()
     }
 
 
