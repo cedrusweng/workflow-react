@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import EndNode from './Nodes/EndNode'
+import EndNode from './Nodes/End'
 import Render from './Nodes/Render'
 import ZoomLayout from './ZoomLayout'
-import {OptionTypes, NodeTemplates, NodeTypes} from './Nodes/AddNodeConstant'
+import {OptionTypes, NodeTemplates, NodeTypes} from './Nodes/Constants'
 import WFC from './OperatorContext'
 
 function WorkFlow({config:_config}) {

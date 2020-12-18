@@ -1,5 +1,5 @@
 import React from 'react';
-import MatchNode from './MatchNode'
+import MatchNode from './Node'
 
 function Render({config, pRef}) {
     return (

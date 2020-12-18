@@ -1,5 +1,5 @@
 import React from 'react'
-import NodeWrap from './NodeWrap'
+import NodeWrap from './Wrap'
 function getOwner(flowPermission) {
     console.log('flowPermission:',flowPermission)
 }

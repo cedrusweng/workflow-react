@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import AddNodeList from './AddNodeList'
+import AddNodeList from './AddOptionList'
 import WFC from '../OperatorContext'
 function AddNode(props) {
     let [showPop, setShowPop] = useState(false)

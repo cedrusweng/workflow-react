@@ -1,6 +1,6 @@
 import React from 'react'
-import AddNodeOption from './AddNodeOption'
-import {OptionNames, OptionTypes} from './AddNodeConstant'
+import AddNodeOption from './AddOption'
+import {OptionNames, OptionTypes} from './Constants'
 function AddNodeList(props) {
     return (<div className="add-node-popover-body">
                     <AddNodeOption type="approver" onClick={() => props.onOptionClick(OptionTypes.APPROVER)} name={OptionNames[OptionTypes.APPROVER]} />

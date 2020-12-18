@@ -1,6 +1,6 @@
 import React from 'react'
-import {NodeTypes} from './AddNodeConstant'
-import AddNode from './AddNode'
+import {NodeTypes} from './Constants'
+import AddNode from './Add'
 function NodeWrap(props) {
     return (
         <div>

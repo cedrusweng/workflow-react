@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
-import AddNode from './AddNode'
+import AddNode from './Add'
 import Render from './Render'
-import { NodeTypes} from './AddNodeConstant'
+import { NodeTypes} from './Constants'
 import WFC from '../OperatorContext'
 function CoverLine({first = false, last = false}) {
     return (<React.Fragment>

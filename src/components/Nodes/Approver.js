@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import NodeWrap from './NodeWrap'
+import NodeWrap from './Wrap'
 import TitleElement from './TitleElement'
 import WFC from '../OperatorContext'
 function ApproverNode(props) {
